@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -1px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#nav-part2 h4{
+    font-size: 1.17vw;
+    font-weight: 550;
+}
+#nav-part2 span{
+    color: rgb(128, 126, 126);
+    margin-left: 20px;
+}
+#nav-part2 h5{
+    display: none;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+#nav1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 50px;
+}
+#nav1 h3{
+    font-size: 1.25vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#nav1 h3:hover{
+    border-bottom: 2px solid orangered;
+    cursor: default ;
+}
+#content{
+    height: calc(100% - 130px);
+    width: 100%;
+}
+#text-content{
+    height: 42%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size: 8.05vw;
+    font-weight: 400;
+}
+#image-content{
+    height: 58%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 28%;
+}   
+#image-content img:nth-child(2){
+    object-position: 0 30%;
+}
+
+@media (max-width:600px) {
+    #nav{
+        height: 70px;
+        padding: 0 20px;
+    }
+    #nav-part1{
+        gap: -1px;
+    }
+    #nav-part2{
+        align-items: center;
+        gap: 35px;
+    }
+    #nav-part2 h4{
+        display: none;
+        font-size: 3.6vw;
+        font-weight: 550;
+    }
+    #nav-part2 h4:nth-child(1){
+        display: initial;
+        margin-right: 10px;
+    }
+    #nav-part2 span{
+        color: rgb(128, 126, 126);
+        margin-left: 10px;
+    }
+    #nav-part2 h5{
+        display: initial;
+    }
+    #nav-part2 h5 i{
+        font-size: 5.5vw;
+        font-weight: 600;
+    }
+
+    .circle{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    #nav1{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 20px;
+    }
+    #nav1 h3{
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #444;
+    }
+    #content{
+        height: calc(100% - 120px);
+        width: 100%;
+    }
+    #text-content{
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 7px;
+    }
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: fit-content;
+        margin-right: 20px;
+    }
+    .elem h1{
+        font-size: 13vw;
+        white-space: nowrap;
+        font-weight: 400;
+    }
+    #image-content{
+        height: 65%;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+    #image-content::-webkit-scrollbar{
+        display: none;
+    }
+    #image-content img{
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 28%;
+    }   
+    #image-content img:nth-child(2){
+        object-position: 0 30%;
+    }
+}
