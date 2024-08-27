@@ -38,7 +38,7 @@ html,body{
     font-weight: 550;
 }
 #nav-part2 span{
-    color: rgb(128, 126, 126);
+    color: orangered;
     margin-left: 20px;
 }
 #nav-part2 h5{
@@ -139,7 +139,7 @@ html,body{
         margin-right: 10px;
     }
     #nav-part2 span{
-        color: rgb(128, 126, 126);
+        color: orangered;
         margin-left: 10px;
     }
     #nav-part2 h5{
